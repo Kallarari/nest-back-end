@@ -9,9 +9,6 @@ import { Event } from './events/event.model';
 import { EventController } from './events/eventController';
 import { EventsServices } from './events/events.services';
 import { User } from './users/users.model';
-import { AuthController } from './auth/auth.controller';
-import { AuthService } from './auth/auth.service';
-import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -29,7 +26,7 @@ import { AuthModule } from './auth/auth.module';
     SequelizeModule.forFeature([Event]),
     SequelizeModule.forFeature([User]),
   ],
-  controllers: [UsersController, AppController, EventController, AuthController],
-  providers: [AppService, EventsServices,AuthService],
+  controllers: [UsersController, AppController, EventController],
+  providers: [AppService, EventsServices],
 })
 export class AppModule {}
