@@ -1,6 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { User } from './users.model';
 
 @Controller('users')

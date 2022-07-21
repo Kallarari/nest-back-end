@@ -10,3 +10,11 @@ Configure the space:
  Now you application should be running in the port localhost/3000;
 
 *** CAUTION: CORS acess is alowed, pre-flight isn't required ***
+
+to use events check in your Insomnia, or any other app that do same, localhost:3000/event and see the events controller for see what you can do, the same for users, use localhost:3000/users.
+
+This back-end use postgress, but can be changed for mysql easely.
+
+The JWT are disabled for you can acess all the commands, but just remove the two slashes in front of the comments in the controllers that it will work.
+
+my github link: [github](https://github.com/Kallarari)
